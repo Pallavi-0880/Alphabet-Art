@@ -46,7 +46,8 @@ for(let i=65; i<=90; i++){
     let word = document.createElement("p");
     word.innerText = words[i - 65];
     frontCard.appendChild(word);
-        //div containing icons at the bottom of each card
+    
+    //div containing icons at the bottom of each card
     let faIcons = document.createElement("div");
     faIcons.classList.add("fa-icons");
     frontCard.appendChild(faIcons);
