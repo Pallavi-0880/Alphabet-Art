@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Mochiy Pop One");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    margin: 0;
+    background-image: url(./assets/bg_small.png);
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1375E4;
+    font-family: 'Mochiy Pop One';
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    /* margin: 5px auto; */
+}
+
+nav div img {
+    border-radius: 50%;
+}
+
+nav div p {
+    margin: 0;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #1375E4;
+    color: white;
+    font-size: 20px;
+    font-family: Roboto;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.social-media,
+.links {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.social-media {
+    padding-top: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin-top: -10px;
+}
+
+.social-media ul li {
+    margin-right: 5px;
+}
+
+.social-media ul li img {
+    border-radius: 20%;
+}
+
+.links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.links ul li {
+    margin-bottom: 15px;
+}
+
+.links ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.social-media img:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+@media (min-width:420px) {
+    .sticker {
+        font-size: 2.3em;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #1375E4;
+        font-family: 'Mochiy Pop One';
+    }
+
+    .main-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .sticker-container>h1 {
+        font-size: 1.2em;
+        font-family: 'Mochiy Pop One';
+        color: #1375E4;
+    }
+
+    .container {
+       min-height: 300px;
+        max-width: 280px;
+        background-color: aqua;
+        border-radius: 12px;
+        margin: auto;
+
+    }
+
+    .container>p {
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.2em;
+    }
+
+    .image-container>img {
+        height: 50px;
+        width: 60px;
+        padding: 2px;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-top: 10px;
+
+    }
+
+    .container2>h2 {
+        font-size: 1.3em;
+        font-family: 'Mochiy Pop One';
+        color: #1375E4;
+    }
+
+    hr {
+        border-top: 1px solid #1375E4;
+    }
+
+    #alphabet {
+        border: 2px solid #1375E4;
+        height: 30px;
+        width: 90px;
+        border-radius: 10px;
+    }
+
+    label {
+        color: #1375E4;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+    }
+
+    .button {
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        border: 1px solid #1375E4;
+    }
+
+    .number-button {
+        height: 30px;
+        width: 110px;
+        border-radius: 25px;
+        border: 1px solid #1375E4;
+        text-align: center;
+    }
+    .proceed-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .proceed-button >button {
+        background-color: #1375E4;
+        color: #FFFFFF;
+        text-align: center;
+        width: 95%;
+        height: 38px;
+        border-radius: 15px;
+
+    }
+
+}
+@media (min-width:768px) {
+    .main-container{
+        width: 95%;
+        display: flex;
+        margin: auto;
+        gap: 30px; 
+        /* border: 1px solid black; */
+     } 
+     .sticker-container >h1{
+        display: none;
+     }
+    .sticker-container{
+        min-height: 300px;
+       min-width: 400px;
+        margin-top: 20px;
+        margin-left: 30px;
+    } 
+     .image-container >img{
+        height: 60px;
+        width: 60px;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 13px;
+    } 
+    
+     .container {
+        height: 300px;
+        min-width: 400px;
+        background-color: aqua;
+        border: 2px solid black;
+        border-radius: 30px;
+        
+    } 
+     .container  p{
+        text-align: center;
+        margin-top: 30%;
+    }
+    
+    .container2>h2 {
+        font-family: 'Mochiy Pop One';
+        color: #1F7AE0;
+        margin-top: 28px;
+    }
+    
+    #alphabet {
+        height: 35px;
+        width: 100px;
+        border-radius: 11px;
+        border: 2px solid blue;
+    }
+    
+    label {
+        color: blue;
+    } */
+    
+     .button {
+        height: 30px;
+        width: 29px;
+        border-radius: 34%;
+        text-align: center;
+    }
+    
+    .number-button {
+        height: 25px;
+        width: 80px;
+        border-radius: 20px;
+        text-align: center;
+    } 
+    
+    
+    
+    .proceed-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .proceed-button >button {
+        width: 95%;
+        height: 38px;
+        background-color: #1375E4;
+        color: #FFFFFF;
+        border-radius: 20px;
+    } 
+    
+    
+}
