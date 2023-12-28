@@ -43,6 +43,112 @@ nav div p {
     margin: 0;
 }
 
+hr {
+    border-top: 1px solid #1375E4;
+}
+
+.sticker {
+    font-size: 1.3em;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1375E4;
+    font-family: 'Mochiy Pop One';
+}
+
+.main-container {
+    width: 92%;
+    margin: auto;
+}
+
+.sticker-container>h1 {
+    font-size: 1.2em;
+    font-family: 'Mochiy Pop One';
+    color: #1375E4;
+}
+
+.container {
+    min-height: 300px;
+    min-width: 250px;
+    background-color: aqua;
+    border-radius: 12px;
+    margin: auto;
+
+}
+
+.container>p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.image-container {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.image-container>img {
+    min-height: 60px;
+    width: 20%;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+.container2 {
+    min-width: 250px;
+}
+
+.container2>h2 {
+    font-size: 1.2em;
+    font-family: 'Mochiy Pop One';
+    color: #1375E4;
+}
+
+#alphabet {
+    border: 2px solid #1375E4;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+label {
+    color: #1375E4;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.button {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px solid #1375E4;
+}
+
+.number-button {
+    height: 30px;
+    width: 110px;
+    border-radius: 25px;
+    border: 1px solid #1375E4;
+    text-align: center;
+}
+
+.proceed-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.proceed-button>button {
+    background-color: #1375E4;
+    color: #FFFFFF;
+    text-align: center;
+    width: 95%;
+    height: 38px;
+    border-radius: 15px;
+
+}
+
 
 
 
@@ -103,188 +209,33 @@ footer {
     opacity: 0.9;
 }
 
-@media (min-width:420px) {
-    .sticker {
-        font-size: 2.3em;
-        text-align: center;
-        color: #FFFFFF;
-        background-color: #1375E4;
-        font-family: 'Mochiy Pop One';
-    }
-
+@media (min-width:764px) {
     .main-container {
-        width: 95%;
-        margin: auto;
+        width: 92%;
+        display: flex;
+        gap: 22px;
+        /* border: 1px solid black; */
     }
 
     .sticker-container>h1 {
-        font-size: 1.2em;
-        font-family: 'Mochiy Pop One';
-        color: #1375E4;
+        display: none;
     }
 
     .container {
-       min-height: 300px;
-        max-width: 280px;
-        background-color: aqua;
-        border-radius: 12px;
-        margin: auto;
-
-    }
-
-    .container>p {
-        text-align: center;
-        color: #FFFFFF;
-        font-size: 1.2em;
-    }
-
-    .image-container>img {
-        height: 50px;
-        width: 60px;
-        padding: 2px;
-        border-radius: 10px;
-        margin-left: 6px;
-        margin-top: 10px;
-
-    }
-
-    .container2>h2 {
-        font-size: 1.3em;
-        font-family: 'Mochiy Pop One';
-        color: #1375E4;
-    }
-
-    hr {
-        border-top: 1px solid #1375E4;
-    }
-
-    #alphabet {
-        border: 2px solid #1375E4;
-        height: 30px;
-        width: 90px;
-        border-radius: 10px;
-    }
-
-    label {
-        color: #1375E4;
-        font-size: 1em;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 20px;
-    }
-
-    .button {
-        height: 30px;
-        width: 30px;
-        border-radius: 30px;
-        border: 1px solid #1375E4;
-    }
-
-    .number-button {
-        height: 30px;
-        width: 110px;
-        border-radius: 25px;
-        border: 1px solid #1375E4;
-        text-align: center;
-    }
-    .proceed-button {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .proceed-button >button {
-        background-color: #1375E4;
-        color: #FFFFFF;
-        text-align: center;
-        width: 95%;
-        height: 38px;
-        border-radius: 15px;
-
-    }
-
-}
-@media (min-width:768px) {
-    .main-container{
-        width: 95%;
-        display: flex;
-        margin: auto;
-        gap: 30px; 
-        /* border: 1px solid black; */
-     } 
-     .sticker-container >h1{
-        display: none;
-     }
-    .sticker-container{
-        min-height: 300px;
-       min-width: 400px;
-        margin-top: 20px;
-        margin-left: 30px;
-    } 
-     .image-container >img{
-        height: 60px;
-        width: 60px;
-        border-radius: 20px;
-        margin-top: 10px;
-        padding: 13px;
-    } 
-    
-     .container {
-        height: 300px;
-        min-width: 400px;
+        height: 330px;
+        min-width: 450px;
         background-color: aqua;
         border: 2px solid black;
         border-radius: 30px;
-        
-    } 
-     .container  p{
-        text-align: center;
-        margin-top: 30%;
     }
-    
-    .container2>h2 {
-        font-family: 'Mochiy Pop One';
-        color: #1F7AE0;
-        margin-top: 28px;
+}
+
+@media (min-width:1024px) {
+    .container {
+        height: 400px;
+        min-width: 600px;
+        background-color: aqua;
+        border: 2px solid black;
+        border-radius: 30px;
     }
-    
-    #alphabet {
-        height: 35px;
-        width: 100px;
-        border-radius: 11px;
-        border: 2px solid blue;
-    }
-    
-    label {
-        color: blue;
-    } */
-    
-     .button {
-        height: 30px;
-        width: 29px;
-        border-radius: 34%;
-        text-align: center;
-    }
-    
-    .number-button {
-        height: 25px;
-        width: 80px;
-        border-radius: 20px;
-        text-align: center;
-    } 
-    
-    
-    
-    .proceed-button {
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .proceed-button >button {
-        width: 95%;
-        height: 38px;
-        background-color: #1375E4;
-        color: #FFFFFF;
-        border-radius: 20px;
-    } 
-    
-    
 }
