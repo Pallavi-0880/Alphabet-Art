@@ -19,12 +19,21 @@
   <div class="main-container">
     <div class="sticker-container">
       <div class="container">
+        <img id="images" alt="">
       </div>
       <div class="image-container">
-        <img src="/assets/stickersImages/mountaion1.jpg" alt="Nature">
-        <img src="/assets/stickersImages/mountaion2.jpg" alt="Snow">
-        <img src="/assets/stickersImages/mountaion3.jpg" alt="Mountains">
-        <img src="/assets/stickersImages/mountaion4.jpg" alt="Nature">
+        <div class="sticker-image">
+           <img id="myImg" src="/assets/stickersImages/mountain1.jpg" alt="Nature" onclick="myFunction(this)">
+        </div>
+        <div class="sticker-image"> 
+          <img  id="myImg" src="/assets/stickersImages/mountain2.jpg" alt="Snow" onclick="myFunction(this)">
+        </div>
+        <div class="sticker-image"> 
+          <img  id="myImg"src="/assets/stickersImages/mountain3.jpg" alt="Mountains" onclick="myFunction(this)">
+        </div>
+        <div class="sticker-image">
+          <img id="myImg" src="/assets/stickersImages/mountain4.jpg" alt="Nature" onclick="myFunction(this)">
+        </div>
       </div>
     </div>
 
@@ -32,36 +41,51 @@
       <h2>Alphabet Art Stickers</h2>
       <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor sit amet consectetur,
         adipisicing elit. Iste, officiis dignissimos odio,
-        porro est delectus eligendi rem architecto quos possimus alias
+        porro est delectus eligendi rem architecto quos.
       </p>
       <h3>Rs. 500.00</h3>
       <hr>
-      <form>
-        <select name="Alphabet" id="alphabet">
-          <option value="Alphabet"></option>
-          <option value="Ball">Ball</option>
-          <option value="Cat">Cat</option>
-          <option value="Dog">Dog</option>
-        </select>
-      </form>
-      <br>
+
       <form>
         <label for="Quantity">Quantity</label>
         <br>
         <button class="button">-</button>
-        <input type="number" value="1" class="number-button" />
+        <button class="number-button">1</button>
         <button class="button">+</button>
       </form>
+      <table>
+        <tr>
+          <td class="table-heading">Details</td>
+        </tr>
+        <tr>
+          <td>Dimensions</td>
+          <td>: 8cm * 8cm</td>
+        </tr>
+        <tr>
+          <td>Quality</td>
+          <td>: 120 GSM matte finish</td>
+        </tr>
+        <tr>
+          <td>Net unit</td>
+          <td>: 36 stickers</td>
+        </tr>
+        <tr>
+          <td>Set</td>
+          <td>: 1 set</td>
+        </tr>
+      </table>
     </div>
   </div>
-  <div class="proceed-button">
-    <button>Proceed</button>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia hic, natus fugit esse in sunt saepe?
-      Doloremque quasi, earum sint, iure eum recusandae aut quos labore voluptate esse vel.</p>
-
+  <div class="call-to-action">
+    <button class="pushable-button">
+      <span class="front">Proceed</span>
+    </button>
+    <p>Lorem ipsum dolor sit amet numquam! Et.Temporibus earum sed reiciendis quidem accusamus dolorum in officiis
+      recusandae numquam! Et.</p>
   </div>
   <footer id="footer"></footer>
   <script async src="../footer.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
