@@ -36,13 +36,22 @@ for(let i=65; i<=90; i++){
     let frontCard = document.createElement("div");
     frontCard.classList.add("frontCard");
     card.appendChild(frontCard);
-        //alphabet image
+    //alphabet image
     let imgContainer = document.createElement("div");
     let alphabetImg = document.createElement("img");
     alphabetImg.src = `https://placehold.co/312x256/pink/white?text=${alphabet}`;
     imgContainer.appendChild(alphabetImg);
     frontCard.appendChild(imgContainer);
-        //word for the alphabet
+
+   
+    
+
+     let overlayContainer1 = document.querySelectorAll(".overlay-container")
+    console.log(overlayContainer1)
+    
+    
+    
+    //word for the alphabet
     let word = document.createElement("p");
     word.innerText = words[i - 65];
     frontCard.appendChild(word);
@@ -93,7 +102,29 @@ for(let i=65; i<=90; i++){
         event.stopPropagation();
     })
 
+    let overlayContainer = document.createElement("div");
+    overlayContainer.classList.add("overlay-container");
+    let cross = document.createElement("i");
+    overlayContainer.appendChild(cross)
+    cross.classList.add("fa-solid","fa-xmark");
+    let overlayImage = document.createElement("img")
+    overlayImage.classList.add("overlay-image");
+    overlayContainer.appendChild(overlayImage);
+    container.appendChild(overlayContainer);
+
+
+    imgContainer.addEventListener("click",()=>{
+        overlayContainer.style.display = "block";
+        overlayImage.src = alphabetImg.src
+        container.style.text
+    })
+    cross.addEventListener("click",()=>{
+        overlayContainer.style.display = "none"
+    })
+
+    
 }
+
 
 // Give design background to back of each alphabet card
 let allBackCards = document.querySelectorAll(".backCard");
