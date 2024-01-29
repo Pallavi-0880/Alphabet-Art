@@ -51,9 +51,9 @@ hr {
 
 .sticker {
     transform: rotate(-3deg);
-    margin-top: 17%;
+    margin-top: 7%;
     width: 100%;
-    min-height: 50px;  
+    min-height: 100px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -63,21 +63,23 @@ hr {
 .sticker h1 {
     font-family: 'Mochiy Pop One';
     color: rgba(19, 117, 228, 1);
-    font-size: 23px;
+    font-size: 2.5em;
     ;
 }
-.main-container>h2{
+
+.main-container>h2 {
     font-family: "Mochiy Pop One";
     color: rgba(19, 117, 228, 1);
     font-size: 15px;
-    }
+}
 
 .main-container {
-    width: 90%;
+    width: 95%;
     min-height: 600px;
     margin: auto;
     margin-top: 10%;
- 
+
+
 }
 
 .sticker-container {
@@ -94,7 +96,8 @@ hr {
     background-color: aqua;
     margin: auto;
 }
-.container2{
+
+.container2 {
     width: 92%;
     margin: auto;
 }
@@ -152,26 +155,22 @@ hr {
 
 .sticker-image>img {
     max-height: 50px;
-   min-width: 20px;
+    min-width: 20px;
     border-radius: 10px;
     margin-top: 17px;
 }
-
-form {
-    margin-top: 20px;
-}
-
-label {
+.quantity-item {
     font-family: "Inter";
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    margin-top: 20px;
     color: rgba(19, 117, 228, 1);
 }
 
-.button {
+.quantity-item>button {
     width: 48px;
     height: 48px;
     padding: 11.67px;
@@ -182,13 +181,14 @@ label {
     border: 0.97px solid rgba(19, 117, 228, 1)
 }
 
-.number-button {
+.quantity-item>input {
     width: 135.22px;
-    height: 48px;
+    height: 35px;
     padding: 11.67px;
     border-radius: 23.35px;
     border: 0.97px;
     gap: 9.73px;
+    text-align: center;
     border: 0.97px solid rgba(19, 117, 228, 1);
 
 }
@@ -224,7 +224,7 @@ td {
     width: 92%;
     margin: auto;
     margin-top: 30px;
-  
+
 }
 
 .pushable-button {
@@ -324,18 +324,20 @@ footer {
     cursor: pointer;
     opacity: 0.9;
 }
+
 @media (min-width:320px) {
-   
-    .main-container{
-        border: 1px solid black;
+
+    .main-container {
         width: 90%;
     }
 }
+
 @media (min-width:375px) {
-   
-    .main-container{
+
+    .main-container {
         width: 90%;
     }
+
     .container {
         min-width: 342px;
     }
@@ -347,6 +349,11 @@ footer {
 }
 
 @media (min-width:768px) {
+    .main-container>h2 {
+        display: none;
+
+    }
+
     .main-container {
         width: 95%;
         display: flex;
@@ -384,10 +391,22 @@ footer {
 }
 
 @media (min-width:1024px) {
-.main-container{
-    width: 90%;
-}   
- .container {
+   
+    
+   .main-container {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .sticker-container {
+        margin-top: 10px;
+    }
+
+    .container2 {
+        margin-top: 10px;
+    }
+
+    .container {
         min-width: 548px;
         max-height: 540px;
         border-radius: 19.25px;

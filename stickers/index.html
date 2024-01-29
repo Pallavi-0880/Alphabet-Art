@@ -20,7 +20,7 @@
     <h2>Alphabet Art Stickers</h2>
     <div class="sticker-container">
       <div class="container">
-        <img id="images" alt="">
+        <img id="images" src="/assets/stickersImages/mountain1.jpg" alt="">
       </div> 
       <div class="image-container">
         <div class="sticker-image">
@@ -47,13 +47,12 @@
       <h3>Rs. 500.00</h3>
       <hr>
 
-      <form>
-        <label for="Quantity">Quantity</label>
-        <br>
-        <button class="button">-</button>
-        <button class="number-button">1</button>
-        <button class="button">+</button>
-      </form>
+      <div class="quantity-item">
+       <h3>Quantity</h3>
+       <button id="decrement" >-</button>
+        <input type="number" value="0" class="quantity-input" min ="1">
+        <button id="increment">+</button>
+      </div>
       <table>
         <tr>
           <th class="table-heading">Details</th>
