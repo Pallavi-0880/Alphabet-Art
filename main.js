@@ -1,13 +1,13 @@
 //All words
-let words = ["Alien","Butterfly","Cat",
-             "Dinosaur","Eagle","Flower",
-             "Giraffe","Hammer","Ice",
-             "Jellyfish","Keys","Lamp",
-             "Mountains","Ninja","Omelette",
-             "Pirate","Queen","Rabbit",
-             "Snowman", "Tree", "Unicorn",
-             "Volcano","Watermelon","X-Ray",
-             "Yak","Zebra"]
+let words = ["Alien", "Butterfly", "Cat",
+    "Dinosaur", "Eagle", "Flower",
+    "Giraffe", "Hammer", "Ice",
+    "Jellyfish", "Keys", "Lamp",
+    "Mountains", "Ninja", "Omelette",
+    "Pirate", "Queen", "Rabbit",
+    "Snowman", "Tree", "Unicorn",
+    "Volcano", "Watermelon", "X-Ray",
+    "Yak", "Zebra"]
 
 //Set up text to speech
 var msg = new SpeechSynthesisUtterance();
@@ -56,34 +56,61 @@ for (let i = 65; i <= 90; i++) {
     let likeIcon = document.createElement("i");
     likeIcon.classList.add("fa-regular", "fa-heart");
     faIcons.appendChild(likeIcon);
-        //Sound Icon
+    //Sound Icon
     let soundIcon = document.createElement("i");
     soundIcon.classList.add("fa-solid", "fa-volume-high");
     faIcons.appendChild(soundIcon);
-        //Share Icon
+    //Share Icon
     let shareIcon = document.createElement("i");
     shareIcon.classList.add("fa-solid", "fa-share-from-square");
     faIcons.appendChild(shareIcon);
+    let span = document.createElement("span")
+    span.setAttribute("class", "tooltip")
+    span.setAttribute("id", "my-tooltip")
+    span.textContent = "Copy-Image"
+    shareIcon.appendChild(span)
+
+    shareIcon.addEventListener("click", () => {
+        let currentUrl = window.location.href;
+        let url = currentUrl + "?" + `q=${alphabet}`
+        if (navigator.share) {
+            navigator.share({
+                title: 'Alphabet Art',
+                url: url
+            })
+        } 
+        else {
+            span.style.display = "block"
+            span.textContent = "Cpoied Image Link"
+            setTimeout(() => {
+                span.style.display = "none"
+            }, 1000)
+
+            navigator.clipboard.writeText(url)
+
+        }
+       
+    })
 
     //Show front card on click
     card.addEventListener("click", () => {
         card.classList.toggle("flipped");
-        if(card.classList.contains("flipped")) {
-            msg.text = words[i-65];
+        if (card.classList.contains("flipped")) {
+            msg.text = words[i - 65];
             window.speechSynthesis.speak(msg);
         }
     })
 
     // Animate star icon on click
-    soundIcon.addEventListener("click",(event)=>{
+    soundIcon.addEventListener("click", (event) => {
         soundIcon.classList.add("fa-beat");
         window.speechSynthesis.speak(msg);
-        event.stopPropagation(); 
+        event.stopPropagation();
     })
 
-    soundIcon.addEventListener("mouseleave",(event)=>{
+    soundIcon.addEventListener("mouseleave", (event) => {
         soundIcon.classList.remove("fa-beat");
-        event.stopPropagation(); 
+        event.stopPropagation();
     })
 
     //Color the heart red when user clicks like
@@ -103,17 +130,17 @@ for (let i = 65; i <= 90; i++) {
         event.stopPropagation();
     })
 
-    shareIcon.addEventListener("mouseover",(event)=>{
+    shareIcon.addEventListener("mouseover", (event) => {
         shareIcon.classList.add("fa-fade");
         event.stopPropagation();
     })
 
-    shareIcon.addEventListener("mouseleave",(event)=>{
+    shareIcon.addEventListener("mouseleave", (event) => {
         shareIcon.classList.remove("fa-fade");
         event.stopPropagation();
     })
 
-    shareIcon.addEventListener("click",(event)=>{
+    shareIcon.addEventListener("click", (event) => {
         event.stopPropagation();
     })
 
